@@ -25,6 +25,11 @@ namespace IfElsePractice3
             {
                 Console.WriteLine("You got to be kidding me");
             }
+            Console.WriteLine($"Why do you thing its {fairest}?");
+
+            Console.ReadLine().ToLower();
+
+         
 
         }
     }
