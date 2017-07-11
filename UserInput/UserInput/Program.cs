@@ -16,7 +16,7 @@ namespace UserInput
             Console.WriteLine("Hello " + name+ " how r u today");
             Console.ReadLine();
 
-            Console.WriteLine("what is your age");
+            Console.WriteLine("what is your m age");
             string age = Console.ReadLine();
 
             Console.WriteLine("you are an {0} year old guy", age);
