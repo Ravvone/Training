@@ -16,11 +16,25 @@ namespace IfElsePractice
             if (favcolor == "RED")
             {
                 Console.WriteLine("red is good");
+                Console.WriteLine("we found a match");
             }
+
+            else if
+                {
+                Console.WriteLine();
+
+                }
+
+
+
+
             else
             {
                 Console.WriteLine("pick again");
+                Console.WriteLine("we definitely did not find a match");
             }
+
+                
 
 
         }
