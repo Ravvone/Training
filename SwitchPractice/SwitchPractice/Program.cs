@@ -31,7 +31,7 @@ namespace SwitchPractice
             }
             Console.ReadLine();
 
-            Console.WriteLine("What is your favorite pasta dish /n 1. Lasagne /n 2. Spaghetti / 3. ravioli");
+            Console.WriteLine("What is your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. ravioli");
             int FoodChoice = Convert.ToInt32(ReadLine().ToUpper());
             ;
             //int food = int.Parse(Console.ReadLine())
