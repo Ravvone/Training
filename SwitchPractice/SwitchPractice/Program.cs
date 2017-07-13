@@ -31,12 +31,15 @@ namespace SwitchPractice
             }
             Console.ReadLine();
 
+            int Food;
             Console.WriteLine("What is your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. ravioli");
-            int FoodChoice = Convert.ToInt32(ReadLine().ToUpper());
+            //int FoodChoice = Convert.ToInt32(ReadLine().ToUpper());
             ;
-            //int food = int.Parse(Console.ReadLine())
+            
+            string FoodChoice = Console.ReadLine();
+            int.TryParse(FoodChoice,out Food);
 
-            switch(FoodChoice)
+            switch(Food)
             {
                 case 1:
                     Console.WriteLine("Lasagne is fantastic!!!");
