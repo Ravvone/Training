@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfPractive2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPractive2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="ButnChange" Content="Button" HorizontalAlignment="Left" Margin="331,10,0,0" VerticalAlignment="Top" Width="75" Height="24"/>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="23" Margin="0,11,0,0" TextWrapping="Wrap" Text="Type Here" VerticalAlignment="Top" Width="320" RenderTransformOrigin="0.5,0.5" SelectionOpacity="0.2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.345"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="Words" Content="." HorizontalAlignment="Left" Margin="179,139,0,0" VerticalAlignment="Top" Width="125" FontSize="24"/>
+
+    </Grid>
+</Window>
