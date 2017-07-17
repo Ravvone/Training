@@ -54,7 +54,7 @@ namespace LoopingPractice2
             
             for(int m =0; m<letters.Length; ++m)
             {
-                Console.WriteLine("The value of the letters array are " + ((letters[m])));
+                Console.WriteLine($"The value of the letters array are " + ((letters[m])));
 
             }
             Console.ReadKey();
