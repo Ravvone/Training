@@ -12,7 +12,7 @@ namespace LoopingPractice2
         {
             string[] girls = { "india", "shinia", "quishonti", "shannon" };
 
-            //using the string 
+            ////using the string 
             for (int g = 0; g < girls.Length; ++g)
             {
                 Console.WriteLine("my favorite girls are " + (girls[g]));
@@ -20,7 +20,7 @@ namespace LoopingPractice2
             }
             Console.ReadKey();
 
-            //using a array command
+            ////using a array command
             for (int d = 0; d < girls.Length; ++d)
             {
                 Array.Sort(girls);
@@ -28,12 +28,29 @@ namespace LoopingPractice2
             }
             Console.ReadKey();
 
-            //interoplation can only be used with number based system
+            ////interoplation can only be used with number based system
             for (int a = 0; a < girls.Length; ++a)
             {
                 Console.WriteLine($"my favorite girls are {a}");
             }
             Console.ReadKey();
+
+            //This is the long way to write a array using a loop
+            int[] nums = new int[4];
+            nums[0] = 10;
+            nums[1] = 20;
+            nums[2] = 40;
+            nums[3] = 80;
+
+            for(int n=0; n<nums.Length;++n)
+            {
+                Console.WriteLine("THe values of array nums is " + (nums[n]));
+
+            }
+            Console.ReadKey();
+
+
+
 
 
 
