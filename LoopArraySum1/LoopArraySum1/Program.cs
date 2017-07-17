@@ -15,13 +15,13 @@ namespace LoopArraySum1
 
             for (int q = 0; q < nums.Length; ++q) 
             {
-                Console.WriteLine(nums[q]);
+                Console.WriteLine((nums[q]) + " is a number in our array");
                 Console.ReadKey();
              
             }
              total = nums.Sum();
             {
-                Console.WriteLine(total);
+                Console.WriteLine((total) + " is the total of all of our numbers in our array");
                 Console.ReadKey();
 
             }
