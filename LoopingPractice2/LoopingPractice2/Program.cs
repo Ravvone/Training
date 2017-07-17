@@ -42,12 +42,24 @@ namespace LoopingPractice2
             nums[2] = 40;
             nums[3] = 80;
 
-            for(int n=0; n<nums.Length;++n)
+            for (int n = 0; n < nums.Length; ++n)
             {
                 Console.WriteLine("THe values of array nums is " + (nums[n]));
 
             }
             Console.ReadKey();
+
+
+            char[] letters = { 'm', 'p', 'o', 'm', 'l' };
+            
+            for(int m =0; m<letters.Length; ++m)
+            {
+                Console.WriteLine("The value of the letters array are " + ((letters[m])));
+
+            }
+            Console.ReadKey();
+
+
 
 
 
