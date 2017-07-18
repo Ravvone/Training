@@ -10,6 +10,7 @@ namespace LoopArrayIfPractice
     {
         static void Main(string[] args)
         {
+         
         }
     }
 }

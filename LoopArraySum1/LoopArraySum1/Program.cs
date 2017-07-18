@@ -19,7 +19,8 @@ namespace LoopArraySum1
                 Console.ReadKey();
              
             }
-             total = nums.Sum();
+            total = nums.Sum();
+            //total += nums[q];
             {
                 Console.WriteLine((total) + " is the total of all of our numbers in our array");
                 Console.ReadKey();
