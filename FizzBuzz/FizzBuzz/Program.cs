@@ -14,14 +14,11 @@ namespace FizzBuzz
            for (i= 1; i<= 100; i++)
             {
 
-                bool fizz = i % 3 == 0;
-                bool buzz = i % 5 == 0;
-
-                if (fizz)
+              if (i % 3 ==0 && i % 5!=0)
                     Console.WriteLine("fizz");
-                else if (buzz)
+                else if (i % 5 == 0 && i % 3!=0)
                     Console.WriteLine("buzz");
-                else if (fizz && buzz)
+                else if (i % 3== 0 && i % 5 ==0)
                     Console.WriteLine("fizzbuzz");
                 else
                     Console.WriteLine(i);
