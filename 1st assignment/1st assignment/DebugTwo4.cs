@@ -6,16 +6,17 @@ class DebugTwo4
 {
    static void Main()
    {
-      string entry;
-      int enteredInteger;
-      int more;
-      Write("Enter an integer ");
-      entry = ReadLine();
-      WriteLine("You entered {1}", entry);
-      enteredInteger = Convert.ToInt32(entry);
-      more = enteredInteger + 1;
-      less = enteredInteger + 1;
-      WriteLine("One more than {0} is {0} and one less than {0} is {0}",
+	  string entry;
+	  int enteredInteger;
+	  int more;
+        int less;
+	  Write("Enter an integer ");
+	  entry = ReadLine();
+	  WriteLine("You entered {1}", entry);
+	  enteredInteger = Convert.ToInt32(entry);
+	  more = enteredInteger + 1;
+	  less = enteredInteger + 1;
+	  WriteLine("One more than {0} is {0} and one less than {0} is {0}",
 	 enteredInteger, more, less);
    }
 }

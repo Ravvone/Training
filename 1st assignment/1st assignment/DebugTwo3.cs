@@ -14,7 +14,7 @@ class DebugTwo3
 	  Write("Enter the number of hours you worked this week ");
 	  hoursAsString = ReadLine();
 	  Write("Enter your hourly rate ");
-        rateAsString = ReadLine();
+		rateAsString = ReadLine();
 
 	  hours = Convert.ToDouble(hoursAsString);
 	  rate = Convert. ToDouble(rateAsString);
