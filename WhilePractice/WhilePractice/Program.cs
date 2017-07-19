@@ -16,29 +16,29 @@ namespace WhilePractice
             int Numofguesses = 1;
 
             Console.WriteLine("Guess a number between 1 and 10");
-            string numGuess = Console.ReadLine();
-            int.TryParse(numGuess, out guessNum);
-
-            while(randNum!=guessNum)
+            do
             {
-                Console.WriteLine($"You have the wrong number {numGuess}. \n Try again");
-                numGuess = Console.ReadLine();
-                int.TryParse(numGuess, out guessNum);
+                string actualnum = Console.ReadLine();
+                while (!int.TryParse(actualnum, out guessNum) || guessNum < 1 || guessNum > 10)
+                {
+                    Console.WriteLine($"You entry of {guessNum} is out of bounds \n try again");
+                    actualnum= Console.ReadLine();
 
-                Numofguesses++;
+                    Numofguesses++;
+                }
+                if (randNum == guessNum)
+                {
+                    Console.WriteLine($"YOur guess of {randNum}was correct you guess {Numofguesses} of times");
 
-            }
-            if (randNum==guessNum)
-            {
-                Console.WriteLine($"YOur guess of {guessNum} was correct \n you guessed {Numofguesses}");
-            }
-            else
-            {
-                Console.WriteLine($"your guess of {guessNum} was not correct ... \n you guessed again ");
-                Numofguesses++;
-            }
-            
-            Console.ReadKey();
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.WriteLine($" your guess of {guessNum} was not correct");
+                    Numofguesses++;
+                }
+
+            } while (guessNum != randNum);
         }
     }
 }
