@@ -14,7 +14,7 @@ namespace WhileLoopPractice2
             int lowNum = 1000;
             int highNum = 2000;
 
-            Console.WriteLine("Enter a valid Id Number");
+            Console.WriteLine("Enter a valid Id Number between 1000 and 2000");
             string valNum = Console.ReadLine();
             int.TryParse(valNum, out idNum);
 
