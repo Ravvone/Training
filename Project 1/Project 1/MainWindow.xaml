@@ -1,0 +1,123 @@
+﻿<Window x:Class="Project_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+      
+        <Canvas HorizontalAlignment="Left" Height="309" VerticalAlignment="Top" Width="348" Background="#FF68B4B0" Margin="10,0,0,0">
+            <TextBox x:Name="Screen" Height="33" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="10" Width="280" OpacityMask="Black" TextChanged="textBox_TextChanged" Opacity="0.65" FontSize="24" Foreground="Black"/>
+            <Button x:Name="button2" Content="7" Canvas.Left="10" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Two" Content="2" Canvas.Left="63" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Two_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="One" Content="1" Canvas.Left="10" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="One_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Minus" Content="-" Canvas.Left="258" Canvas.Top="161" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Minus_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Plus" Content="+" Canvas.Left="196" Canvas.Top="157" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Plus_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Equals" Content="=" Canvas.Left="196" Canvas.Top="203" Width="94" Height="32" FontSize="24" FontWeight="Bold" Click="Equals_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Clear" Content="C" Canvas.Left="112" Canvas.Top="203" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Clear_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Zero" Content="0" Canvas.Left="63" Canvas.Top="203" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Zero_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Nine" Content="9" Canvas.Left="112" Canvas.Top="153" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Nine_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Eight" Content="8" Canvas.Left="63" Canvas.Top="153" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Eight_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Divide" Content="/" Canvas.Left="258" Canvas.Top="99" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Divide_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Multiply" Content="*" Canvas.Left="196" Canvas.Top="99" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Multiply_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Six" Content="6" Canvas.Left="112" Canvas.Top="99" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Six_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="FIve" Content="5" Canvas.Left="63" Canvas.Top="99" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="FIve_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Period" Content="." Canvas.Left="10" Canvas.Top="203" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Period_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Seven" Content="7" Canvas.Left="10" Canvas.Top="153" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Seven_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Four" Content="4" Canvas.Left="10" Canvas.Top="99" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Four_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                
+            </Button>
+            <Button x:Name="button2_Copy17"  Canvas.Left="309" Canvas.Top="10" Width="32" Height="32" FontSize="24" FontWeight="Bold">
+                <Image x:Name="Back" Source="D:\CC4 Projects\Training\Project 1\Project 1\undo-button_318-76442.jpg"></Image>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                
+            </Button>
+            <Button x:Name="p_RIght" Content=")" Canvas.Left="258" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="p_RIght_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="p_Left" Content="(" Canvas.Left="196" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.563,0.219" Click="p_Left_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Three" Content="3" Canvas.Left="112" Canvas.Top="48" Width="32" Height="32" FontSize="24" FontWeight="Bold" Click="Three_Click">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Canvas>
+    </Grid>
+</Window>
