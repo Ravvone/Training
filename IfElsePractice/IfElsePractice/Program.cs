@@ -19,9 +19,9 @@ namespace IfElsePractice
                 Console.WriteLine("we found a match");
             }
 
-            else if
+            else if(favcolor == "BLUE")
                 {
-                Console.WriteLine();
+                Console.WriteLine("blue is the shit");
 
                 }
 

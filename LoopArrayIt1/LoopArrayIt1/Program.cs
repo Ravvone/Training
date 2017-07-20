@@ -36,6 +36,7 @@ namespace LoopArrayIt1
                 Console.WriteLine($"The value of the cars array is currently {(cars[e])}");
                 Console.ReadLine();
                 if(cars[e] =="corvette")
+
                 {
                     Console.WriteLine("we found corvette");
                     
