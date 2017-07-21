@@ -10,53 +10,65 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Class1 c = new Class1();
             int num1, num2, choice;
-            float num3;
-        Calculator:
+          
+        SmartCalculator:
 
 
             Console.WriteLine("Give me a number so I can show you some magic");
             num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Another One.. Dj Khaled Voice");
+          
+           Console.WriteLine("Another One.. Dj Khaled Voice");
             num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+            
             Console.WriteLine("Do you want it done \n 1. Add \n 2.Subtract \n 3. Multiply \n 4.Divide");
             choice = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
+           
+            
 
             if (choice == 1)
             {
-                num3 = num1 + num2;
-                Console.WriteLine($"Bam the total is {num3}");
+                c.Add(num1, num2);
             }
             else if(choice == 2)
             {
-                num3 = num1 - num2;
-                Console.WriteLine($" Wylaa the total is {num3}");
+                c.Subtra(num1, num2);
             }
             else if(choice == 3)
             {
-                num3 = num1 * num2;
-                Console.WriteLine($"You wanna know what the answer is");
-                Console.ReadLine();
-                Console.WriteLine("Do you really wanna know");
-                Console.ReadLine();
-                Console.WriteLine($"{num3}");
-                Console.ReadLine();
-                Console.WriteLine("dont say I never did anything for you");
+                c.Multi(num1, num2);
             }
             else if(choice == 4)
             {
-                num3 = num1 / num2;
-                Console.WriteLine($"{num3} is the answer wow you didnt know that ?? puhahaha");
-                Console.ReadLine();
+                c.Divi(num1, num2);
 
             }
             else
             {
-                Console.WriteLine("???????");
-                goto Calculator;
+                Console.WriteLine("You messed up bruh");
 
             }
             Console.ReadLine();
+            Console.Clear();
+         
+            Console.WriteLine("Do you want to go again yes or no ?");
+            string opt = Console.ReadLine();
+           
+              
+            if(opt == "yes")
+            {
+                goto SmartCalculator;
+
+            }
+            else
+            {
+                Console.WriteLine("You'll be back.....");
+            }
+            Console.ReadKey();
+            Console.Clear();
                   
 
           

@@ -15,7 +15,7 @@ namespace ConsoleApplication1
 
         label:
 
-            Console.WriteLine("\n\tMenu");
+          
             Console.WriteLine("\nPress 1 for add");
             Console.WriteLine("Press 2 for subtraction");
             Console.WriteLine("Press 3 for multiplication");
