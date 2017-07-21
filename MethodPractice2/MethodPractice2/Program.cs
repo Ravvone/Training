@@ -38,6 +38,10 @@ namespace MethodPractice2
             int sum = number1 + number2;
             Console.WriteLine($"the sum of {number1} and number {number2} is {sum}");
         }
+        public void Divison(int number1, int number2)
+        {
+
+        }
 
     }
 }

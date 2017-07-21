@@ -34,12 +34,14 @@ namespace Project_1
 
         }
 
-        private double total1 = 0;
-        private double total2 = 0;
+        private double total3;
+        private double total1;
+        private double total2; 
         bool plusButtonClicked = false;
         bool minusButtonClicked = false;
         bool multiplyButtonClicked = false;
         bool divideButtonClicked = false;
+        
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -120,7 +122,8 @@ namespace Project_1
 
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-            total1 = total1 += double.Parse(Screen.Text);
+            total1= total1 *= float.Parse(Screen.Text);
+          
             Screen.Text = "*";
 
             plusButtonClicked = false;
@@ -131,7 +134,7 @@ namespace Project_1
 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-            total1 = total1 += double.Parse(Screen.Text);
+            total1 = total1 / int.Parse(Screen.Text);
             Screen.Text = "/";
 
             plusButtonClicked = false;
@@ -142,7 +145,7 @@ namespace Project_1
 
         private void Plus_Click(object sender, RoutedEventArgs e)
         {
-            total1 = total1 += double.Parse(Screen.Text);
+            total1 = total1 += int.Parse(Screen.Text);
             Screen.Text = "+";
 
             plusButtonClicked = true;
@@ -153,7 +156,7 @@ namespace Project_1
 
         private void Minus_Click(object sender, RoutedEventArgs e)
         {
-            total1 = total1 += double.Parse(Screen.Text);
+            total1 = total1 -= int.Parse(Screen.Text);
             Screen.Text = "-";
 
             plusButtonClicked = false;
@@ -168,29 +171,30 @@ namespace Project_1
             {
                 if (plusButtonClicked == true)
                 {
-                    total2 = total1 + double.Parse(Screen.Text);
-                    Screen.Text = total2.ToString();
-                    total1 = 0;
+                    total3 = total1 + total2;
+                    Screen.Text = total3.ToString();
+                    
                 }
                 else if (minusButtonClicked == true)
                 {
-                    total2 = total1 - double.Parse(Screen.Text);
-                    Screen.Text = total2.ToString();
-                    total1 = 0;
+                    total3 = total1 - total2;
+                    Screen.Text = total3.ToString();
+                   
                 }
                 else if (multiplyButtonClicked == true)
                 {
-                    total2 = total1 * double.Parse(Screen.Text);
-                    Screen.Text = total2.ToString();
-                    total1 = 0;
+                    total3 = total1 * total2;
+                    Screen.Text = total3.ToString();
+                    
                 }
                 else if (divideButtonClicked == true)
                 {
-                    total2 = total1 / double.Parse(Screen.Text);
-                    Screen.Text = total2.ToString();
-                    total1 = 0;
+                    total3 = total1 / total2 ;
+                    Screen.Text = total3.ToString();
+                    
                 }
 
+                
 
         }   }
     }
