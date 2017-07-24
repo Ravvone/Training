@@ -13,6 +13,8 @@ namespace MethodOverloading1
             int firstRealNumber;
             int secondRealNumber;
             double firstDouble;
+
+
             Console.WriteLine("Give me a number to work with");
             string firstNum = Console.ReadLine();
 
@@ -23,9 +25,11 @@ namespace MethodOverloading1
             string secondNum = Console.ReadLine();
 
 
+
             double.TryParse(firstDub, out firstDouble);
             int.TryParse(firstNum, out firstRealNumber);
             int.TryParse(secondNum, out secondRealNumber);
+
 
             MultiplyIntergers();
             MultiplyIntergers(firstRealNumber);
@@ -35,6 +39,14 @@ namespace MethodOverloading1
             //MultiplyIntergers();
 
         }
+
+
+
+
+
+
+
+
         public static void MultiplyIntergers()
         {
             int firstNum = 0;
