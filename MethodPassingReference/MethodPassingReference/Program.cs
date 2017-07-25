@@ -17,6 +17,8 @@ namespace MethodPassingReference
             DisplayNewValue(ref x);
             Console.WriteLine($"The value of the new value is {x}");
             Console.ReadKey();
+            
+            
 
         }
         private static void DisplayValueParameter(int x)
@@ -29,5 +31,6 @@ namespace MethodPassingReference
             n = 1000;
             Console.WriteLine($"We are in the Display New Value Method\nWhere n = {n}");
         }
+        
     }
 }
