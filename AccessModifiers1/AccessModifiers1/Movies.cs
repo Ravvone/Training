@@ -13,7 +13,7 @@ namespace AccessModifiers1
 
         public void Genres()
         {
-            Program.
+            Program.DivideNumber(1,2);
             
             Console.WriteLine("Horror");
             Console.WriteLine("Action");

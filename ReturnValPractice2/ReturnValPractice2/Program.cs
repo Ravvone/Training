@@ -17,7 +17,7 @@ namespace ReturnValPractice2
             double birthdate = Bday(date, month);
             string grub = Food(dish);
             Console.WriteLine($"Your birtdate is {birthdate}");
-            Console.WriteLine($"Your favorite dish is {grub}")
+            Console.WriteLine($"Your favorite dish is {grub}");
 
 
 

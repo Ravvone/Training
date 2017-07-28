@@ -30,7 +30,7 @@ namespace AccessModifiers1
             int product = n1 * n2;
             return product;
         }
-        private static int PlusNumber(int n1, int n2)
+        public static int PlusNumber(int n1, int n2)
         {
             int sum = n1 + n2;
             return sum;
