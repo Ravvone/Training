@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace inheritancePractice3
 {
-    class Class3
+    public class Square : Shape
     {
+        protected double width, length;
+
+        public void AcceptDetails(double l, double w)
+        {
+            length = 5;
+            width = 7;
+
+
+
+        }
+        public double GetArea()
+        {
+            return length * width;
+
+        }
+        public void Display()
+        {
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area:{0}", GetArea());
+
+
+
+        }
     }
-}
