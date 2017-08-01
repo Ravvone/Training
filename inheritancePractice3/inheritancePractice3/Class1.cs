@@ -8,7 +8,7 @@ namespace inheritancePractice3
 {
     public class Square : Shape
     {
-        double width, length;
+        protected double width, length;
 
         public void AcceptDetails( double l, double w)
         {
