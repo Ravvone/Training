@@ -10,8 +10,7 @@ class DebugEight2
       Write("Score was {0}. ", testScore);
       GiveBonus(ref testScore);
       WriteLine("Now it is {0}.", testScore);
-        GiveBonus(ref letterScore);
-        Write("Grade was {0}. ", letterScore);
+      Write("Grade was {0}. ", letterScore);
       GiveBonus(ref letterScore);
       WriteLine("Now it is {0}. ", letterScore);
         ReadLine();
@@ -19,12 +18,12 @@ class DebugEight2
    private static void GiveBonus(ref int testScore)
    {
       const int BONUS = 5;
-      testScore = BONUS;
+      testScore += BONUS;
    }
    private static void GiveBonus(ref string letterScore)
    {
       const string BONUS = "+";
-      letterScore = BONUS;
+      letterScore += BONUS;
    }
 }
 
