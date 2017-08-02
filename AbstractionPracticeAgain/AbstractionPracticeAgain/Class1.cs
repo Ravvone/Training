@@ -11,7 +11,7 @@ namespace AbstractionPracticeAgain
 
         public abstract string Mechanics();
         public abstract string Build();
-        public abstract string Type();
+        //public abstract string Type();
     }
    
      class Swiss: Rolex
@@ -32,12 +32,12 @@ namespace AbstractionPracticeAgain
             return build1;
 
         }
-        public override string Type()
-        {
+        //public override string Type()
+        //{
 
-            mechanism+= watch;
-            return watch;
-        }
+        //    mechanism+= watch;
+        //    return watch;
+        //}
             
 
     }
