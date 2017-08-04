@@ -14,7 +14,7 @@ namespace AbstractionPracticeAgain
             Watches ws = new Watches();
 
             string Model, Make, TickType;
-            //Model = sw.Type();
+            Model = sw.Type();
             Make = sw.Build();
             TickType = sw.Mechanics();
 
@@ -23,7 +23,7 @@ namespace AbstractionPracticeAgain
             Console.ReadKey();
 
 
-            Console.WriteLine($"Todays watch is a \n{Make}\n{TickType}");
+            Console.WriteLine($"Todays watch is a {Model}\n{Make}\n{TickType}");
 
             Console.ReadLine();
 

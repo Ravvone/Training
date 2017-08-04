@@ -10,24 +10,24 @@ namespace LoopArrayIt1
     {
         static void Main(string[] args)
         {
-            int d;
-            int[] pieces = { 11, 77, 33, 51, 22, 78, 90 };
+            //int d;
+            //int[] pieces = { 11, 77, 33, 51, 22, 78, 90 };
 
-            for (d = 0; d < pieces.Length; ++d)
-            {
-                Console.WriteLine($"The value of the pieces array is currently {(pieces[d])}");
-                if (pieces[d] == 51)
-                {
-                    Console.WriteLine($"We found 51");
-                    Console.WriteLine("The loop is over");
-                    break;
+            //for (d = 0; d < pieces.Length; ++d)
+            //{
+            //    Console.WriteLine($"The value of the pieces array is currently {(pieces[d])}");
+            //    if (pieces[d] == 51)
+            //    {
+            //        Console.WriteLine($"We found 51");
+            //        Console.WriteLine("The loop is over");
+            //        break;
 
-                }
+            //    }
 
-                Console.ReadLine();
+            //    Console.ReadLine();
 
-            }
-            Console.ReadLine();
+            //}
+            //Console.ReadLine();
 
 
             string[] cars = { "buick", "datsun", "bmw", "chevy", "corvette", "olds" };

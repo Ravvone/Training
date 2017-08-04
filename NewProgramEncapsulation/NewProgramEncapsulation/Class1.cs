@@ -55,6 +55,7 @@ namespace NewProgramEncapsulation
             set {
                 while (int.TryParse(input, out tuition) || tuition > 10000 || tuition > 1000) ;
                 {
+                    input = Console.ReadLine();
                     Console.WriteLine("Your tuition is all messed up ");
                     input = Console.ReadLine();
 
