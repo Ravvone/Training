@@ -9,12 +9,16 @@ namespace ConstrutorApp
     class Program
     {
         static void Main(string[] args)
-        {
-            Professor pr = new Professor("Charles", "Xavier");
-            pr.GoodPeople();
-            Professor rp = new Professor(216, 514);
-            rp.ShowNumbers();
-            Console.ReadLine();
+        //{
+        ////    Professor pr = new Professor("Charles", "Xavier");
+        ////    pr.GoodPeople();
+        ////    Professor rp = new Professor(216, 514);
+        //    rp.ShowNumbers();
+        //    Console.ReadLine();
+        //    Student st = new Student();
+
+        //    st.Present();
+        //    Console.ReadLine();
 
 
         }

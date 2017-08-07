@@ -11,8 +11,8 @@ namespace ConstrutorApp
         string fname;
         string lname;
 
-        int important1;
-        int important2;
+        string important1;
+        string important2;
 
         public Professor(string Fname, string Lname)
         {
@@ -20,7 +20,7 @@ namespace ConstrutorApp
             lname = Lname;
 
         }
-        public Professor (int Code1, int Code2)
+        public Professor (string Code1, string  Code2)
         {
             important1 = Code1;
             important2 = Code2;

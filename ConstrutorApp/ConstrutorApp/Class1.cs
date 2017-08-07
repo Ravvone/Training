@@ -6,8 +6,28 @@ using System.Threading.Tasks;
 
 namespace ConstrutorApp
 {
-    class Student 
+    class Student :Professor
     {
+
+        public Student() :base (216,514)
+        {
+            Console.WriteLine("Things that make you go hmmmm");
+
+
+        }
+        public void Present()
+        {
+
+            Console.WriteLine("Yes it is Friday!!!");
+        }
+
+
+
+
+
+
+
+
 
     }
 }
